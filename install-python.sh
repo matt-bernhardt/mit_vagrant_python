@@ -15,9 +15,7 @@ sudo apt-get update
 
 sudo apt-get -y install python3-pip
 
-pip install --user pipenv
-pip intall virtualenv
+pip3 install --user pipenv
 
-python --version
-pip --version
-virtualenv --version
+python3 --version
+pip3 --version
