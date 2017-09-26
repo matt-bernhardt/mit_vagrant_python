@@ -10,8 +10,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provision :shell, path: "provision.sh"
-  config.vm.provision :shell, path: "install-rvm.sh", args: "stable", privileged: false
-  config.vm.provision :shell, path: "install-ruby.sh", args: "2.4.1 bundle", privileged: false
+  config.vm.provision :shell, path: "install-python.sh"
   config.vm.provision :shell, path: "install-heroku-cli.sh"
   config.vm.provision :shell, path: 'install-phantomjs.sh'
 
